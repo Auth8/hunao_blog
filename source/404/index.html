@@ -1,0 +1,54 @@
+---
+title: 404
+layout: false
+toc: false
+comments: false
+permalink: /404
+date: 2017-05-19 10:40:24
+---
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8;"/>
+<meta name="robots" content="all" />
+<meta name="robots" content="index,follow"/>
+<title>404 error page</title>
+<style>
+.float-left {
+	float: left !important;
+}
+.float-right {
+	float: right !important;
+}
+.float-center {
+	 margin:0 auto;
+	 width:260px;
+	 height:260px;
+}
+</style>
+</head>
+
+<body>
+<div style=" margin-top:12%;"> 
+<div class="float-left" id="404_div">
+<img src="/images/ds-1.gif">
+<div class="alert"> 卧槽！页面不见了！ </div>
+</div>
+<div class="float-center">
+<img src="/images/ds-2.png" width="260"> 
+</div>
+</div>
+</body>
+</html>
+<script>
+	var i = 0;
+	var obj = document.getElementById("404_div");
+	var my_interval = setInterval(function () {
+			if(i++%2 ==0){
+				obj.setAttribute("class", "float-right");
+			}else{
+				obj.setAttribute("class", "float-left");
+			}
+        }, 800);
+		
+</script>

@@ -1,0 +1,34 @@
+---
+title: 时间计算
+layout: false
+toc: false
+comments: false
+date: 2017-07-19 11:28:16
+---
+<meta charset="utf-8">
+现在时间:<span id="now_time"></span><br>
+增加时间:<select id="hour" onchange="jisuan()"></select>时<select id="sec" onchange="jisuan()"></select>分 <br>
+最终时间:<span id="time"></span>
+<script type="text/javascript">
+	function getLocalTime(nS) {   
+   	return new Date(parseInt(nS) * 1000).toLocaleString().replace(/年|月/g, "-").replace(/日/g, " ");    
+	}
+
+	setInterval("now_time.innerHTML=new Date().toLocaleString();",1000);
+	var hourStr = "";
+	for (var i = 0; i <= 24; i++) {
+		hourStr += "<option value='"+ i +"'>"+ i +"</option>";
+	}
+	var secStr = "";
+	for (var i = 0; i <= 60; i++) {
+		secStr += "<option value='"+ i +"'>"+ i +"</option>";
+	}
+	hour.innerHTML = hourStr;
+	sec.innerHTML = secStr;
+	//计算时间戳
+	aa = 0;
+	function jisuan(){
+		aa = hour.value * 60 * 60 + sec.value * 60;
+	}
+	setInterval("time.innerHTML=getLocalTime((new Date().getTime()/1000)+aa);",1000);
+</script>
