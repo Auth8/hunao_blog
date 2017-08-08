@@ -1,6 +1,7 @@
 ---
 title: 今日头条视频跳转到阳光宽频网显示评论
-tags: []
+tags: 
+	- JS脚本
 categories: []
 date: 2017-08-04 15:49:23
 ---
@@ -10,6 +11,7 @@ date: 2017-08-04 15:49:23
 
 #### 第一步：安装一个用户脚本管理器
 要使用用户脚本，您首先需要安装一个用户脚本管理器。根据您使用的浏览器不同，可用的用户脚本管理器也有所不同。
+<!-- more -->
 - Chrome：[Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
 - Firefox：[Tampermonkey](https://addons.mozilla.org/firefox/addon/tampermonkey/)
 - Safari：[Tampermonkey](http://tampermonkey.net/?browser=safari)
